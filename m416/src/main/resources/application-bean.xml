@@ -53,13 +53,23 @@
             </constructor-arg> </bean> -->
 
     <!--动态代理实现 不用写dao的实现 -->
-    <bean id="MapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <!-- 这里的basePackage 指定了dao层接口路劲，这里的dao接口不用自己实现 -->
+    <!--<bean id="MapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
+        <!--&lt;!&ndash; 这里的basePackage 指定了dao层接口路劲，这里的dao接口不用自己实现 &ndash;&gt;-->
+        <!--<property name="basePackage" value="com.convertlab.beans.mapper" />-->
+        <!--&lt;!&ndash; 如果只有一个数据源的话可以不用指定，但是如果有多个数据源的话必须要指定 &ndash;&gt;-->
+        <!--&lt;!&ndash; <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" /> &ndash;&gt;-->
+        <!--&lt;!&ndash;直接指定了sqlsessionTemplate名称，这个和上面的其实是一样的 &ndash;&gt;-->
+        <!--&lt;!&ndash; <property name="sqlSessionTemplateBeanName" value="sqlSession" /> &ndash;&gt;-->
+    <!--</bean>-->
+
+    <bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
         <property name="basePackage" value="com.convertlab.beans.mapper" />
-        <!-- 如果只有一个数据源的话可以不用指定，但是如果有多个数据源的话必须要指定 -->
-        <!-- <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" /> -->
-        <!--直接指定了sqlsessionTemplate名称，这个和上面的其实是一样的 -->
-        <!-- <property name="sqlSessionTemplateBeanName" value="sqlSession" /> -->
+        <property name="properties">
+            <value>
+                mappers=tk.mybatis.mapper.common.Mapper
+            </value>
+        </property>
     </bean>
 
     <!--事务管理器 -->

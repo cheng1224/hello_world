@@ -24,7 +24,7 @@ public class Customer {
     @Column(name = "money_total")
     private Long moneyTotal;
 
-    @Column(name = ""is_ machine"")
+    @Column(name = "is_ machine")
     private String isMachine;
 
     @Column(name = "tenant_id")

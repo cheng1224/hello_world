@@ -31,7 +31,7 @@ public class TenantServiceImpl implements TenantService {
     @Autowired
     protected JdbcTemplate ads;
 
-    @Autowired(required = false)
+    @Autowired
     protected TenantMapper tenantMapper;
 
     @Override
