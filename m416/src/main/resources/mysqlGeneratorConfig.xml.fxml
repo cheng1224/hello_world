@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <classPathEntry location="C:/Users/licheng/.m2\repository/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar" />
+    <!-- <classPathEntry location="/java/maven-local-repository/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar" /> -->
+    <context id="jia-jian">
+        <commentGenerator>
+            <property name="suppressAllComments" value="true" />
+            <property name="suppressDate" value="true" />
+        </commentGenerator>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/jiajian_toutiao" userId="root" password="123456" />
+        <javaModelGenerator targetPackage="com.jiajian.mybatis.model" targetProject="jiajian-service-cms">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <sqlMapGenerator targetPackage="com.jiajian.mybatis.mapper" targetProject="jiajian-service-cms">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+        <javaClientGenerator targetPackage="com.jiajian.mybatis.mapper" targetProject="jiajian-service-cms" type="XMLMAPPER">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!-- 		<table tableName="master_sms_category" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="master_sms_provider" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="master_city_county" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="master_hobbies" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="master_hospital_department" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" -->
+        <!-- 			enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="master_hospital_type" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="master_practitioner_speciality" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" -->
+        <!-- 			enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="master_hospital_job_title" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="master_report_spam_category" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+
+        <!-- 		<table tableName="jiajian_user" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="jiajian_app" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="jiajian_token" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="jiajian_token_view" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"  -->
+        <!-- 		    enableUpdateByExample="false" enableInsert="false" enableDeleteByPrimaryKey="false" enableUpdateByPrimaryKey="false" /> -->
+        <!-- 		<table tableName="jiajian_sms" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="jiajian_sms_verify_code" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="jiajian_file" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="jiajian_log_cocoalumberjack" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+
+        <!-- 		<table tableName="chat_group" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="chat_group_member" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+
+        <!-- 		<table tableName="hospital" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="hospital_view" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+                    enableUpdateByExample="false" enableInsert="false" enableDeleteByPrimaryKey="false" enableUpdateByPrimaryKey="false" /> -->
+
+        <!-- 		<table tableName="user_category_family" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="user_category_practitioner" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" -->
+        <!-- 			enableUpdateByExample="false" /> -->
+
+        <!-- 		<table tableName="jiajian_employee" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="practitioner_verification" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" -->
+        <!-- 			enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="practitioner_verification_view" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false"  -->
+        <!-- 		    enableUpdateByExample="false" enableInsert="false" enableDeleteByPrimaryKey="false" enableUpdateByPrimaryKey="false" /> -->
+        <!-- 		<table tableName="practitioner_avatar" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" -->
+        <!-- 			enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="practitioner_verification_file" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" -->
+        <!-- 			enableUpdateByExample="false" /> -->
+
+        <!-- 		<table tableName="user_hobbies_relation" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="practitioner_hospital_follow_relation" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" -->
+        <!-- 			enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="practitioner_speciality_relation" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" -->
+        <!-- 			enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="hospital_family_relation" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" -->
+        <!-- 			enableUpdateByExample="false" /> -->
+
+        <!-- 		<table tableName="contacts" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="contacts_request" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+
+        <!-- 		<table tableName="post" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="post_comment" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="post_digest" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="post_favorite" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="post_forward" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="post_image" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="post_praise" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="post_report_spam" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="post_report_spam_relation" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+
+        <!-- 		<table tableName="push_offline_message" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="push_offline_message_receiver" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+
+        <!-- 		<table tableName="kpi_app_talking_data" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 	<table tableName="kpi_app_yunba_data" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <!-- 		<table tableName="kpi_user_message_summary" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+
+        <!-- 		<table tableName="hospital_history" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" /> -->
+        <table tableName="toutiao_cover" enableCountByExample="false" enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" />
+
+
+    </context>
+</generatorConfiguration>

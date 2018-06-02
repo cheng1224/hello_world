@@ -1,0 +1,2 @@
+#!/bin/bash
+cd /opt && envconsul -consul ${CONSUL_HOST}:8500 -prefix convertlab/global -prefix convertlab/ads java -Dcom.sun.management.jmxremote.port=1099 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/opt/log/ads/ -XX:+PrintGCDetails -XX:+PrintHeapAtGC -XX:+PrintGCDateStamps -XX:+PrintTenuringDistribution -verbose:gc -Xloggc:/opt/log/ads.gc -XX:ErrorFile=/tmp/java_error%p.log -Denv=${ENV} -jar ads-latest.jar --spring.profiles.active=test 1>/dev/null 2>>/tmp/ads-latest.jar.log 2>&1
