@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" />
+		<title>签到</title>
+
+		<link rel="stylesheet" href="../css/wx_example.css" />
+		<link rel="stylesheet" href="../css/weui.css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.0/style/weui.min.css" />
+		<link rel="stylesheet" href="../css/sandoz.css" />
+	</head>
+
+	<body>
+		<div class="container js_container">
+			<div class="page pd15  mb50">
+				<div class="sds-map-box">
+					<div class="sds-map">
+						<img src="../img/map.png" style="width:100%" alt="">
+					</div>
+					<div class="sds-map-desc weui-cell weui-cell_access">
+						<div class="weui-cell__bd">签到医院</div>
+						<div class="weui-cell__ft" style="font-size: 0">
+							<span class="selected-hospital" style="vertical-align:middle; font-size: 14px;">上海中山医院</span>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="remind">
+					<p>若医院定位错误请重新选择，签到之后请及时拜访</p>
+				</div>
+
+				<div class="sign-btn-box">
+					<div class="sign-btn">
+						<p class="signin"></p>
+						<!-- 三种签到状态修改class即可：signin、signout、signover -->
+					</div>
+
+				</div>
+			</div>
+			<!--底部菜单-->
+			<div class="weui_tab">
+				<div class="weui-tabbar" style="position: fixed;">
+					<a href="planing.html" class="weui_navbar_item">
+						<div class="sds_bar_item">
+							<img class="sds_bar-icon" src="../img/plan.png" />
+							<div class="weui_sds_tabbar_title">计划</div>
+						</div>
+					</a>
+					<div id="#tab1" class="weui_navbar_item weui_bar_item_on">
+						<div class="sds_bar_item">
+							<img class="sds_bar-icon" src="../img/sign_active.png" />
+							<div class="weui_sds_tabbar_title" style="color:#2883d2">签到</div>
+						</div>
+					</div>
+					<a href="visiting.html" class="weui_navbar_item">
+						<div class="sds_bar_item">
+							<img class="sds_bar-icon" src="../img/visit.png" />
+							<div class="weui_sds_tabbar_title">拜访</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://res.wx.qq.com/open/libs/zepto/1.1.6/zepto.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+		<script src="../js/libs/wx_example.js"></script>
+		<script src="../js/libs/fastclick.js"></script>
+		<script src="../js/libs/public-utils.js"></script>
+		<script src="../js/config.js"></script>
+		<script src="../js/api.js"></script>
+		<script src="../js/sales/signin.js"></script>
+	</body>
+
+</html>

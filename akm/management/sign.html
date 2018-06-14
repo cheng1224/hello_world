@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" />
+		<title>签到</title>
+		<!--sds-->
+		<link rel="stylesheet" href="../css/sds.css" />
+		<link rel="stylesheet" href="../css/wx_example.css" />
+		<link rel="stylesheet" href="../css/weui.css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.0/style/weui.min.css" />
+		
+	</head>
+
+	<body ontouchstart>
+		<div class="container js_container">
+			<div class="page">
+				<!--头像列表-->
+				<ul class="flex-container list_ul">
+				  <li class="flex-item list_li">
+				  	<p class="flex-label user_name">Sally</p>
+				  	<img src="../img/header.jpg" class="flex-img image"/>
+				  	<p class="weui_sds_sign_time sign_time">8:30</p>
+				  </li>
+				</ul>
+
+				
+			</div>
+			<!--底部菜单-->
+			<div class="weui_tab">
+				<div class="weui-tabbar" style="position: fixed;">
+					<a id="javascript:;" class="weui_navbar_item weui_bar_item_on">
+						<div class="weui_sds_bar_item">
+							<img class="weui_sds_tabbar_icon" src="../img/sign_active.png" />
+							<div class="weui_sds_tabbar_title" style="color:#2883d2">签到</div>
+						</div>
+					</a>
+					<a href="visit.html" class="weui_navbar_item">
+						<div class="weui_sds_bar_item">
+							<img class="weui_sds_tabbar_icon" src="../img/visit.png" />
+							<div class="weui_sds_tabbar_title">拜访</div>
+						</div>
+					</a>
+					<a href="plan.html" class="weui_navbar_item">
+						<div class="weui_sds_bar_item">
+							<img class="weui_sds_tabbar_icon" src="../img/plan.png" />
+							<div class="weui_sds_tabbar_title">计划</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!--js-->
+		<!--<script type="text/javascript" src="../js/config.js" ></script>
+		<script type="text/javascript" src="../js/libs/interface.js" ></script>-->
+		<script src="https://res.wx.qq.com/open/libs/zepto/1.1.6/zepto.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+		<script src="../js/libs/wx_example.js"></script>
+		<script src="../js/libs/fastclick.js"></script>
+		<script src="../js/config.js"></script>
+		<script src="../js/api.js"></script>
+		<script src="../js/manager/sign.js"></script>
+	</body>
+
+</html>

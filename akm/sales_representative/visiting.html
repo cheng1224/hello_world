@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" />
+		<title>拜访</title>
+
+		<link rel="stylesheet" href="../css/wx_example.css" />
+		<link rel="stylesheet" href="../css/weui.css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.0/style/weui.min.css" />
+		<link rel="stylesheet" href="../css/sandoz.css" />
+	</head>
+
+	<body ontouchstart>
+		<div class="container js_container">
+			<div class="page pd15 mb50">
+				<div class="sds-visit-block">
+					<div class="sds-visit-block-title">
+						<p>今日拜访进度</p>
+						<div class="stamp">
+							<p><img src="../img/mark1.png" alt="">重点标签：医生重要程度标注</p>
+							<p><img src="../img/mark2.png" alt="">有待完善：需要完善的拜访记录</p>
+							<p><img src="../img/mark3.png" alt="">还未填写：还未填写的拜访记录</p>
+						</div>
+						<span class="help">?</span>
+					</div>
+					<div class="sds-visit-block-progress">
+						<div class="progress">
+							<span class="visit_progress_icon"></span>
+						</div>
+						<p class="progress-num"><span class="visit_progress">12</span>/<span class="total_progress">16</span></p>
+					</div>
+				</div>
+
+				<div class="sds-visit-panel">
+					<div class="sds-visit-panel-title">
+						<p class="hospital hospital-name">上海普瑞眼科光明附属第三医院</p>
+						<i class="caret"></i>
+					</div>
+					<div class="sds-visit-panel-content visit-panel-show">
+						<div class="sds-visit-card">
+							<div class="sds-visit-card-hd">
+								<div class="sds-visit-card-img">
+									<img src="../img/man.png" alt="">
+									<i class="dot on"></i>
+								</div>
+							</div>
+							<div class="sds-visit-card-bd">
+								<p class="doctor-position">眼耳鼻喉科</p>
+								<p class="doctor-name">常乐乐</p>
+							</div>
+							<i class="star on"></i>
+						</div>
+						<div class="sds-visit-panel-content-bottom">
+							<p>加载更多</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--底部菜单-->
+			<div class="weui_tab">
+				<div class="weui-tabbar" style="position: fixed;">
+					<a href="planing.html" class="weui_navbar_item">
+						<div class="sds_bar_item">
+							<img class="sds_bar-icon" src="../img/plan.png" />
+							<div class="weui_sds_tabbar_title">计划</div>
+						</div>
+					</a>
+					<a href="signin.html" class="weui_navbar_item weui_bar_item_on">
+						<div class="sds_bar_item">
+							<img class="sds_bar-icon" src="../img/sign.png" />
+							<div class="weui_sds_tabbar_title">签到</div>
+						</div>
+					</a>
+					<div class="weui_navbar_item">
+						<div class="sds_bar_item">
+							<img class="sds_bar-icon" src="../img/visit_active.png" />
+							<div class="weui_sds_tabbar_title" style="color:#2883d2">拜访</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="https://res.wx.qq.com/open/libs/zepto/1.1.6/zepto.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+		<script src="../js/libs/wx_example.js"></script>
+		<script src="../js/libs/fastclick.js"></script>
+		<script src="../js/libs/public-utils.js"></script>
+		<script src="../js/config.js"></script>
+		<script src="../js/api.js"></script>
+		<script src="../js/sales/visiting.js"></script>
+	</body>
+
+</html>

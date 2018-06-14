@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" />
+    <title>计划</title>
+    <!--sds-->
+    <link rel="stylesheet" href="./css/sds.css" />
+    <link rel="stylesheet" href="./css/framework7.md.min.css">
+</head>
+
+<body ontouchstart>
+
+<div class="page">
+    <div class="navbar view-main">
+        <div class="navbar-inner">
+            <div class="left">
+                <a class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="ios-only">Back</span>
+                </a>
+            </div>
+            <div class="title">Static Navbar</div>
+            <div class="right"></div>
+        </div>
+    </div>
+
+    <!-- 轮播图 广告面板 -->
+    <div class="page today_panel">
+
+        <div class="weui_sds_plan_box plan_box">
+
+        </div>
+    </div>
+
+    <div class="page tomorrow_panel" style="display: none">
+
+    </div>
+    <!--底部菜单-->
+    <div class="weui_tab">
+        <div class="weui-tabbar" style="position: fixed;">
+            <a href="sign.html" class="weui_navbar_item weui_bar_item_on">
+                <div class="weui_sds_bar_item">
+                    <img class="weui_sds_tabbar_icon" src="../img/sign.png" />
+                    <div class="weui_sds_tabbar_title">签到</div>
+                </div>
+            </a>
+            <a href="visit.html" class="weui_navbar_item">
+                <div class="weui_sds_bar_item">
+                    <img class="weui_sds_tabbar_icon" src="../img/visit.png" />
+                    <div class="weui_sds_tabbar_title">拜访</div>
+                </div>
+            </a>
+            <a href="javascript:;" class="weui_navbar_item">
+                <div class="weui_sds_bar_item">
+                    <img class="weui_sds_tabbar_icon" src="../img/plan_active.png" />
+                    <div class="weui_sds_tabbar_title" style="color:#2883d2">计划</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="./js/libs/framework7.min.js"></script>
+<script src="./js/libs/wx_example.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/api.js"></script>
+<script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>拜访</title>
+		<!--sds-->
+		<link rel="stylesheet" href="../css/sds.css" />
+		<link rel="stylesheet" href="../css/wx_example.css" />
+		<link rel="stylesheet" href="../css/weui.css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.0/style/weui.min.css" />
+		<style>
+			@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone4/4s */
+
+				.sds_visiter_name{
+					width: 4em;
+				}
+
+			}
+
+			@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
+
+				.class{}
+
+			}
+		</style>
+	</head>
+
+	<body ontouchstart>
+		<div class="container js_container">
+			<div class="page">
+
+				<!--拜访 部分-->
+				<div class="weui_sds_visit_box js_visit_panel">
+					<div class="weui_sds_visiter_info">
+						<div class="weui_sds_visiter_info_box">
+							<div class="sds_visiter_name user_name">Linda</div>
+
+						</div>
+						<div class="weui_sds_visiter_time_type">
+							<p class="sds_time"><span id="sds_time_minute" class="time_desc">1分钟前</span></p>
+						</div>
+					</div>
+					<div style="display: flex">
+						<img src="../img/location.png" alt="GPS" class="sds_visiter_gps" />
+						<div class="sds_visiter_place action_desc">上海中山医院</div>
+					</div>
+					<div class="weui_sds_visiter_type">
+						<div class="sds_visit_num_box visit_box">
+							<div class="visit_item"></div>
+						</div>
+						<div class="sds_visit_num">
+							<span class="have_access_num finish_count">5</span><span>/</span><span class="access_num total_count">16</span>
+						</div>
+					</div>
+					<div class="sds_visiter_list_box js_visit_panel_show visit_doctor_ul" style="display: none;">
+						<div class="weui-cell weui-cell_access sds_del_boder visit_doctor_li" data-id="001">
+							<div class="weui-cell__bd sds_doctor_info">
+								<div class="sds_doctor_name">张仲景</div>
+								<div class="sds_doctor_hospital">黄浦区妇幼保健院</div>
+							</div>
+							<div class="weui-cell__ft"></div>
+						</div>
+					</div>
+				</div>
+				
+
+			</div>
+			<!--底部菜单-->
+			<div class="weui_tab">
+				<div class="weui-tabbar" style="position: fixed;">
+					<a href="sign.html" class="weui_navbar_item weui_bar_item_on">
+						<div class="weui_sds_bar_item">
+							<img class="weui_sds_tabbar_icon" src="../img/sign.png" />
+							<div class="weui_sds_tabbar_title">签到</div>
+						</div>
+					</a>
+					<a href="javascript:;" class="weui_navbar_item">
+						<div class="weui_sds_bar_item">
+							<img class="weui_sds_tabbar_icon" src="../img/visit_active.png" />
+							<div class="weui_sds_tabbar_title" style="color:#2883d2">拜访</div>
+						</div>
+					</a>
+					<a href="plan.html" class="weui_navbar_item">
+						<div class="weui_sds_bar_item">
+							<img class="weui_sds_tabbar_icon" src="../img/plan.png" />
+							<div class="weui_sds_tabbar_title">计划</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!--js-->
+		<script src="https://res.wx.qq.com/open/libs/zepto/1.1.6/zepto.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+		<script src="../js/libs/wx_example.js"></script>
+		<script src="../js/libs/fastclick.js"></script>
+		<script src="../js/config.js"></script>
+		<script src="../js/api.js"></script>
+		<script src="../js/manager/visit.js"></script>
+	</body>
+
+</html>

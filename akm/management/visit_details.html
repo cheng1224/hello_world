@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"/>
+    <title>拜访详情</title>
+    <!--sds-->
+    <link rel="stylesheet" href="../css/wx_example.css"/>
+    <link rel="stylesheet" href="../css/weui.css"/>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.0/style/weui.min.css"/>
+    <link rel="stylesheet" href="../css/sds.css"/>
+</head>
+
+<body ontouchstart>
+<div class="js_container">
+    <div class="page_body">
+        <div class="sds_prompt_info">基本信息</div>
+        <div class="weui-cells" style="margin-top: 0;">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p class="sds_details_title">拜访医院</p>
+                </div>
+                <div class="sds_details_explain hospital_name"></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p class="sds_details_title">拜访医生</p>
+                </div>
+                <div class="sds_details_explain doctor_name"></div>
+            </div>
+        </div>
+
+        <div class="sds_prompt_info">记录信息</div>
+        <div class="weui-cells" style="margin-top: 0;">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p class="sds_details_title">等待时长</p>
+                </div>
+                <div class="sds_details_explain"><span class="wait_time_limit">15</span>分钟</div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p class="sds_details_title">拜访时长</p>
+                </div>
+                <div class="sds_details_explain"><span class="visit_time_limit">15</span>分钟</div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p class="sds_details_title">是否协访</p>
+                </div>
+                <div class="sds_details_explain is_assist">是</div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p class="sds_details_title">参与人</p>
+                </div>
+                <div class="sds_details_explain_more participants">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="sds_prompt_info product_title">涉及产品</div>
+        <div class="weui-cells product_box" style="margin-top: 0;">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p class="sds_details_title">产品名称</p>
+                </div>
+                <div class="sds_details_explain product_name"></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p class="sds_details_title">拜访目标</p>
+                </div>
+                <div class="sds_details_explain visit_purpose"></div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p class="sds_details_title">关键反馈</p>
+                </div>
+                <div class="sds_details_explain_more feedback"></div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script src="https://res.wx.qq.com/open/libs/zepto/1.1.6/zepto.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+<script src="../js/libs/wx_example.js"></script>
+<script src="../js/libs/fastclick.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/api.js"></script>
+<script src="../js/manager/visit_details.js"></script>
+</body>
+</html>

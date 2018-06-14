@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" />
+		<title>计划</title>
+		<!--sds-->
+		<link rel="stylesheet" href="../css/sds.css" />
+		<link rel="stylesheet" href="../css/wx_example.css" />
+		<link rel="stylesheet" href="../css/weui.css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.0/style/weui.min.css" />
+	</head>
+
+	<body ontouchstart>
+		<div class="container js_container">
+			<!--计划菜单-->
+			<div class="weui_sds_tabbar_top">
+				<div class="sds-navbar__item sds-bar__item_on">
+					<p class="sds-navbar__label">今日（<span class="today">12/28</span>）</p>
+				</div>
+				<div class="sds-navbar__item">
+					<p class="sds-navbar__label">明日（<span class="tomorrow">12/29</span>）</p>
+				</div>
+			</div>
+			<div class="page today_panel">
+				<!--计划-->
+				<div class="weui_sds_plan_box plan_box">
+					<span class="user_name" style="display: block;padding: 15px;margin: -15px 0">Sally</span>
+					<i class="caret"></i>
+					<div class="sds_visiter_list_box js_visit_panel_show" style="display: none;">
+						<!--上午-->
+						<div class="am">
+							<div class="weui-sds-cell weui-cell_access sds_del_boder">
+								<div class="sds_plan_info">
+									<img src="../img/morning.png" class="sds_plan_img_morning" />
+									<div class="sds_plan_title_morning">上午</div>
+								</div>
+							</div>
+							<div class="weui-sds-cell weui-cell_access sds_del_boder hospital_sign_item">
+								<div class="weui-cell__bd sds_doctor_info">
+									<div class="sds_doctor_hospital hospital_name">上海市第二人民医院</div>
+								</div>
+								<div class="weui-cell__ft_type sds_has_sign hospital_sign">巳签到</div>
+							</div>
+						</div>
+
+						<!--下午-->
+						<div class="pm">
+							<div class="weui-sds-after-cell weui-cell_access sds_del_boder" id="afterNoon">
+								<div class="sds_plan_info">
+									<img src="../img/afternoon.png" class="sds_plan_img_morning" />
+									<div class="sds_plan_title_morning">下午</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="page tomorrow_panel" style="display: none">
+
+			</div>
+			<!--底部菜单-->
+			<div class="weui_tab">
+				<div class="weui-tabbar" style="position: fixed;">
+					<a href="sign.html" class="weui_navbar_item weui_bar_item_on">
+						<div class="weui_sds_bar_item">
+							<img class="weui_sds_tabbar_icon" src="../img/sign.png" />
+							<div class="weui_sds_tabbar_title">签到</div>
+						</div>
+					</a>
+					<a href="visit.html" class="weui_navbar_item">
+						<div class="weui_sds_bar_item">
+							<img class="weui_sds_tabbar_icon" src="../img/visit.png" />
+							<div class="weui_sds_tabbar_title">拜访</div>
+						</div>
+					</a>
+					<a href="javascript:;" class="weui_navbar_item">
+						<div class="weui_sds_bar_item">
+							<img class="weui_sds_tabbar_icon" src="../img/plan_active.png" />
+							<div class="weui_sds_tabbar_title" style="color:#2883d2">计划</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+
+		<script src="https://res.wx.qq.com/open/libs/zepto/1.1.6/zepto.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+		<script src="../js/libs/wx_example.js"></script>
+		<script src="../js/libs/fastclick.js"></script>
+		<script src="../js/config.js"></script>
+		<script src="../js/api.js"></script>
+		<script src="../js/manager/plan.js"></script>
+	</body>
+
+</html>
